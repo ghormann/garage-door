@@ -1,0 +1,10 @@
+[Unit]
+Description=Greg Door Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/src/opendoor/start.sh
+
+[Install]
+WantedBy=multi-user.target
